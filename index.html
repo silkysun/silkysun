@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/silkysun.css"/>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">silkysun</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+			<ul class="nav pull-right">
+			              <li><a href="http://www.linkedin.com/in/beccasuewood"><img src="data:image/png;base64,
+							iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+							bWFnZVJlYWR5ccllPAAABJFJREFUeNqsVl1oHFUU/u7M7OxfyuanadNtlGz8KYl5kASsD1oEqfgi
+							JvimfRBUCPgkFd98UF/6VtASEMQfahERCiJCfahIKVYakuJPbWsTo92ENSaN3U2ymZ07M9dzZnY3
+							O7OTPkRnuXtnzrn3fOfvnnPFniPPH3/m5dfe2pfLZl3Xw//16LqOxduV9UufvffqlU9OnO49cDDE
+							FxMfXraPHupLSMelT8WkOiv6jrvw4tcx+IXrxfmT4w+N5HtyViuwYSYSiVLFgiRrBa2XLvx3XQNM
+							/vOFtAqMUwKx63RNIJntyAkznSJCGLhsSaxu2XA9BdtVuKczjbF9OZTWLfxcWkfCB98dsCBLKpb0
+							aFLRUBgb0sE/BE58FLozeOOJAjpM3WdO/XAL39xYQdLQdhVnQb8tCmEMLoyq7aJsOaSZg4mR/U1Q
+							fo4UuvHFTyUknd0BM9yWdJVoeqcFmDXaqDmokuXX/t4IMW+sbIJDkUnouwLmMxKclBhgixjrBOqR
+							fl9dX8beDhNP3teDm7erOHlxAbbnwZVqZ+FK+S4VIo5HmQ0/1O3ANccja4OjRF7B2+dv4sR3c5C0
+							aw+5PWsaqJJXtmy3uSlNdEn7GC1L764XyNDpO5XQmjlG4pDUhIoFdshim4TYNBe6Mnjn6CHaF1hx
+							7rcVfH1tGWP9nXhxrL+56dT3f6A/l8Irj9yLQUpIScC/Lm/gg+kiZpbKyFJoWAZH19ghSgZbaTsK
+							m7aHrpSJFx7ON5lLZQufziyiryMZoqcoy58d3g9D2zZlqLcDTz/Yi4nTM5gulpEmy9kTptDjDIbm
+							EbBDFrtsteOGmDU6YuwvW4bpz430hUAbD7v9+OOD4CrIMjkcnhefH5qi5FDkZsUBiSxiHsgbKmbv
+							mdklvPT5j/h4ejFEHz2YQ2/GDHKAi1JNQkrZ7mquWJJy2vF4hBGYB85qL9w8zlFROXZm1n//iOJ6
+							/94sHit0+d+daQOdKQPLVPkMTYNUDlnvtFvMYDaNGg0nYhofMdY6qtC3c6v+Ic0kDd9Ts5RQTUso
+							BIJGzQ3kun4PiTnHLruaDfItiwA36BFXc8Fh//sK0WxFcoPlcGwdQbNQKi65DDbSt4xevKjFKp5e
+							T4AmP66oNPisWywwgwoVCFKRYq7qCrXTw8AqItqr81Uw4noEtNbGFlVe1aXE0kP7oqchZL3SY6qI
+							0SYl0tb8vhqJkmisr4/W3AnzFDKZDH5fmHfe//LsA47rjk5OTp7P5/Orhgoh7wAgYvpdIwRKtbGF
+							qCNzrU6msLS4qE9NTR0mxqOjo6Ol8fHxC9sW0/3ol78qOPzuxSborTtbAJXLS3+uhegLa1WSaAQK
+							0HyKuthZ6tsNUQvU2aBp9Th7wjB0t6en+0rfgbwcHh6eC1y9rSY26TJweX615aqo8cFEuSrb6Xog
+							GHRmiwRUXGnp5RzT+k2IslqjKUFfV4eGhq4ODAzUz7vGNUQZvhBeHG36d6M3Zl34Hou7guTSZiWt
+							S0v5lwLXr2KmaUJ7KlV6XbOtO7Gd/D89AglprR0b1N5MG8LigqJp21eofwUYABnolxra9d85AAAA
+							AElFTkSuQmCC" width="20" height="20" alt="LinkedIn"></a></li>
+
+			              <li><a href="http://www.github.com/silkysun"><img style="background-color: #fff" src="data:image/png;base64,
+							iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+							bWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+							bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+							eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+							NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+							dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+							dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+							IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+							ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+							cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFu
+							Y2VJRD0ieG1wLmlpZDo3QTI1MDRGOTUyREUxMUUyOTMxM0QzQThENTMyMjYwNSIgeG1wTU06RG9j
+							dW1lbnRJRD0ieG1wLmRpZDo3QTI1MDRGQTUyREUxMUUyOTMxM0QzQThENTMyMjYwNSI+IDx4bXBN
+							TTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdBMjUwNEY3NTJERTExRTI5
+							MzEzRDNBOEQ1MzIyNjA1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdBMjUwNEY4NTJERTEx
+							RTI5MzEzRDNBOEQ1MzIyNjA1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4
+							bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Wq6O+gAAA7RJREFUeNqsl2lIVUEUx69XzbRSK6yg
+							xNxASczskZUEoQStEASSFRSUaQsRRRvtVB8qQ1ooi+pDEEW00EJFqUXRhxZbTCpNWwkKpQxbzKXX
+							/8T/xjA+X/e9dw/8eDPz7p35z5yZM+cGJcYNNmxaTzARjAXDQALoBdygGbwCj0EFuAq+2ek0yIaA
+							RLAK5FOEHZPBj4Pt4LW/ArqDzWAp6Ka0/wD3QR1oZFsMSAIuEKE82wqKwRbQ4osAmfVpkMG6LPMF
+							cAiUsWNPFgbGgflgsvTPdnHNNLrpvwIywWXQn/V7oAg8Mnyz4WA/GMH6R4qrVh8ytZeSuIGswXeC
+							bD8GF6vku8WsDwDXOYZHAeHgDP1p0Pfb+ILphwB5J5n+X6aIOMX91UnAJpCuzHw3WACeg/dgNUWq
+							Fg2itLZwnpp34BkoACVgF/+XI7xR3wNJfDgU3OXSdYBzYKrSuWyih/RvnDKBDuU/FzexZWe5AUPA
+							He6JNpAK6kP40BoO/puz7mB7qDa7BKJbMJc72cN/1hFuZ98P2O9KUCgziATT+dB5bcO9NAK3OqUs
+							K3SR5ZkS2ETAJCV4HNSUj3ZAwEgtkJXyt4eMLQJy2dDMOG5ZkXKGAxWwUKlLIPvOcq4IGKoEnDbl
+							wRmGc5avlNs4lli6CIhnpUZ7KcNBAZnakbf2VqLJsyz2RfN/mIMCQrT+PvM30lQujGDtFmtxUMAv
+							8FMT9C8SNrHcT3vphYMCdPf2tTa+qSQMsdpDFQ4KKPMQ0MTqRUAVKy4t8pVqp8JfE1fu1RKdLJaf
+							mspMeysxwdqpyx0QsAK8Ueo5ym1YbjL5aFWCj9gQXp2ifC746sfAkhcWgn1ae5GyMldMHokTbJwC
+							0hiCa8EccJQ+k/zgEvjQxYBykb3lfSKRbxBTONXSGPoNjtlkXccp4g8ej9tMvWXwA2CMErmsRGWH
+							h5tSktUJ4JaXBOUm+2vnKtcG94n+G4cauQdG8Z53MyGRe3wJXx4I8sBaNaNRLJQTOdKFgA1gNssl
+							1qqrSWkE7+pUCihgNnSNN5fdgONJ3Dy6I4hJaRZXrFNWnMysJYYitoJjYBbjxCcmL16/NbSyfFus
+							Y7mB+6vOW1ruYmZsRatysEiJZm6bAuKZlo9nvYF7pNJbWm7QDdnMEQ3Ghir61mXDDZJ0HmYotwav
+							Zp+VvnyaRTAtX6xeHj6a7PY9YL3lc38+TlOYkud5SMu7Mrn5TvLjtCbQr2PLohiocrjMsTy6buYS
+							Em6fgBsMWLai5x8BBgDWAcpCBG5hFgAAAABJRU5ErkJggg==" width="20" height="20" alt="Github"></a></li>
+
+			              <li><a href="http://www.twitter.com/silkysun"><img src="data:image/png;base64,
+							iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEJGlDQ1BJQ0MgUHJvZmlsZQAAOBGF
+							Vd9v21QUPolvUqQWPyBYR4eKxa9VU1u5GxqtxgZJk6XtShal6dgqJOQ6N4mpGwfb6baqT3uBNwb8
+							AUDZAw9IPCENBmJ72fbAtElThyqqSUh76MQPISbtBVXhu3ZiJ1PEXPX6yznfOec7517bRD1fabWa
+							GVWIlquunc8klZOnFpSeTYrSs9RLA9Sr6U4tkcvNEi7BFffO6+EdigjL7ZHu/k72I796i9zRiSJP
+							wG4VHX0Z+AxRzNRrtksUvwf7+Gm3BtzzHPDTNgQCqwKXfZwSeNHHJz1OIT8JjtAq6xWtCLwGPLzY
+							Zi+3YV8DGMiT4VVuG7oiZpGzrZJhcs/hL49xtzH/Dy6bdfTsXYNY+5yluWO4D4neK/ZUvok/17X0
+							HPBLsF+vuUlhfwX4j/rSfAJ4H1H0qZJ9dN7nR19frRTeBt4Fe9FwpwtN+2p1MXscGLHR9SXrmMgj
+							ONd1ZxKzpBeA71b4tNhj6JGoyFNp4GHgwUp9qplfmnFW5oTdy7NamcwCI49kv6fN5IAHgD+0rbyo
+							Bc3SOjczohbyS1drbq6pQdqumllRC/0ymTtej8gpbbuVwpQfyw66dqEZyxZKxtHpJn+tZnpnEdrY
+							BbueF9qQn93S7HQGGHnYP7w6L+YGHNtd1FJitqPAR+hERCNOFi1i1alKO6RQnjKUxL1GNjwlMsiE
+							hcPLYTEiT9ISbN15OY/jx4SMshe9LaJRpTvHr3C/ybFYP1PZAfwfYrPsMBtnE6SwN9ib7AhLwTrB
+							DgUKcm06FSrTfSj187xPdVQWOk5Q8vxAfSiIUc7Z7xr6zY/+hpqwSyv0I0/QMTRb7RMgBxNodTfS
+							Pqdraz/sDjzKBrv4zu2+a2t0/HHzjd2Lbcc2sG7GtsL42K+xLfxtUgI7YHqKlqHK8HbCCXgjHT1c
+							AdMlDetv4FnQ2lLasaOl6vmB0CMmwT/IPszSueHQqv6i/qluqF+oF9TfO2qEGTumJH0qfSv9KH0n
+							fS/9TIp0Wboi/SRdlb6RLgU5u++9nyXYe69fYRPdil1o1WufNSdTTsp75BfllPy8/LI8G7AUuV8e
+							k6fkvfDsCfbNDP0dvRh0CrNqTbV7LfEEGDQPJQadBtfGVMWEq3QWWdufk6ZSNsjG2PQjp3ZcnOWW
+							ing6noonSInvi0/Ex+IzAreevPhe+CawpgP1/pMTMDo64G0sTCXIM+KdOnFWRfQKdJvQzV1+Bt8O
+							okmrdtY2yhVX2a+qrykJfMq4Ml3VR4cVzTQVz+UoNne4vcKLoyS+gyKO6EHe+75Fdt0Mbe5bRIf/
+							wjvrVmhbqBN97RD1vxrahvBOfOYzoosH9bq94uejSOQGkVM6sN/7HelL4t10t9F4gPdVzydEOx83
+							Gv+uNxo7XyL/FtFl8z9ZAHF4bBsrEwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAXNpVFh0WE1MOmNv
+							bS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1w
+							dGs9IlhNUCBDb3JlIDQuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3Lncz
+							Lm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiBy
+							ZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hh
+							cC8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5BZG9iZSBQaG90b3Nob3AgQ1M1LjEg
+							TWFjaW50b3NoPC94bXA6Q3JlYXRvclRvb2w+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8
+							L3JkZjpSREY+CjwveDp4bXBtZXRhPgo6qik9AAAG3ElEQVRYCcVXaWxUVRQ+975l2ukylFKBTlXA
+							ujD2B9p2NI0JU9QoMTFKMo0hagyUxkhc8J8/ZDrBH8QfahA1tnUJMSZ0QuIP5YdEWyIam06TIjLK
+							YgBlKFJamW6zvPfu9Zw7nXbadANJPMmb9959Z/3OuefcYVJK+D9Jv5nGmyIRbbAiyCoGAaOKwGAM
+							n30gO4PgzLbDABgySSAEFAqtkkNrK8+9X88dFbBAa5c+n0yws1MD0o9Gg51Sy+dlJDTlDXKEw8BD
+							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" width="20" height="20" alt="Twitter"></a></li>
+
+			            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>Welcome to silkysun.net!</h1>
+      <h5>Home of the documentation siren, Becca Wood.</h5>
+      <br>
+	  <p>I am a Technical Writer in the San Francisco Bay Area.  I am currently managing the documentation process for the open source 
+		project <a href="http://jclouds.org">jclouds</a>.<br><br>I am in the initial stages of building my website.  Please check for updates
+		very soon!</p>
+
+    </div> 
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
